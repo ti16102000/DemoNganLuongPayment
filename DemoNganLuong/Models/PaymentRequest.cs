@@ -106,6 +106,8 @@ namespace DemoNganLuong.Models
             ht.Add("buyer_info", HttpUtility.UrlEncode(nl.buyer_info));// "Họ tên người mua *|* Địa chỉ Email *|* Điện thoại *|* Địa chỉ nhận hàng");// "Họ tên người mua *|* Địa chỉ Email *|* Điện thoại *|* Địa chỉ nhận hàng");
             ht.Add("affiliate_code", nl.affiliate_code);
             ht.Add("secure_code", md5);
+            ht.Add("cancel_url", nl.cancel_url);
+            ht.Add("time_limit", nl.time_limit);
             // T?o url redirect
 
             string redirect_url = this.nganluong_url;

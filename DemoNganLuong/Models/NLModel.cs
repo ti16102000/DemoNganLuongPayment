@@ -16,5 +16,7 @@
         public string order_description { get; set; }
         public string buyer_info { get; set; }
         public string affiliate_code { get; set; }
+        public string cancel_url { get; set; }
+        public string time_limit { get; set; }
     }
 }

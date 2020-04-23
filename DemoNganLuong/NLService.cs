@@ -26,7 +26,9 @@ namespace DemoNganLuong
                 fee_shipping = "1000",
                 order_description = "Demo Payment",
                 buyer_info = "",
-                affiliate_code = ""
+                affiliate_code = "",
+                cancel_url = "http://localhost:55070/NLPayment/Index",
+                time_limit = DateTime.Now.AddMinutes(5).ToString("dd/MM/yyyy,hh:mm")
             };
             return new PaymentRequest().buildCheckoutUrlNew(data);
         }
